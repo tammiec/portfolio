@@ -2,8 +2,6 @@ import React from 'react';
 
 export default function TechListItem(props) {
   return (
-    <div className='tech-list-item'>
-      <p>{props.stack}</p>
-    </div>
+    <li className='tech-list-item'>{props.stack}</li>
   );
 }
