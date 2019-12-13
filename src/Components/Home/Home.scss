@@ -1,9 +1,12 @@
+@import '../variables';
+
 #home {
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: $Portfolio-3-hex;
 }
 
 .learn-more {

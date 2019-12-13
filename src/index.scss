@@ -1,11 +1,15 @@
+@import './Components/variables';
+
 body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   scrollbar-width: none;
+  color: $Portfolio-1-hex;
 }
 
 h1, h2, h3, h4 {
   font-family: 'Cutive Mono', monospace;
+  color: $Portfolio-1-hex;
 }
