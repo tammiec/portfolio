@@ -3,13 +3,12 @@ import TechListItem from './TechListItem';
 
 export default function TechList(props) {
 
-  const techStackArray = ['HTML', 'JavaScript', 'CSS']
-  const techStack = techStackArray.map((stack, index) => <TechListItem key={index} stack={stack} />)
+  const techStack = props.skills.map((stack, index) => <TechListItem key={index} stack={stack} />)
 
   return (
     <>
-      <h2>Tech Stack</h2>
-      <ul>
+      <h3>{props.skillTitle}</h3>
+      <ul className={props.skillType}>
         {techStack}
       </ul>
     </>
