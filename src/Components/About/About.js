@@ -28,8 +28,8 @@ export default function About(props) {
         skills={['PostgreSQL', 'Git', 'CircleCI']}
       />
       <TechList 
-        skillType='acquiring'
-        skillTitle='Currently Acquiring'
+        skillType='learning'
+        skillTitle='Currently Learning'
         skills={['Redux', 'React Native']}
       />
     </div>
