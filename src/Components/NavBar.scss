@@ -1,0 +1,12 @@
+@import './variables';
+
+header {
+  background-color: $Portfolio-2-hex;
+  width: 100%;
+}
+
+#nav-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}

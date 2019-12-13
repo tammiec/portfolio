@@ -7,6 +7,6 @@ export default function Button(props) {
   }
 
   return (
-    <button onClick={handleClick}>Click here to learn more about me!</button>
+    <button className='learn-more' onClick={handleClick}>Click here to learn more about me!</button>
   );
 }
