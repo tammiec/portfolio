@@ -13,6 +13,7 @@
   align-items: center;
   justify-content: center;
   padding: 1em 2em 0;
+  width: 80%;
 }
 
 #tech-list-container {
@@ -25,11 +26,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-
-  h3 {
-    text-align: left;
-    margin-right: 0.5em;
-  }
+  justify-content: center;
 }
 
 .tech-list-item {

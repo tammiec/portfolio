@@ -7,8 +7,8 @@ export default function TechList(props) {
 
   return (
     <>
+      <h3>{props.skillTitle}</h3>
       <ul className={`tech-list ${props.skillType}`}>
-        <h3>{props.skillTitle}</h3>
         {techStack}
       </ul>
     </>
