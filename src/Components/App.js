@@ -20,10 +20,18 @@ export default function App() {
   return (
     <div className="App">
       <Home aboutRef={aboutRef} />
-      <NavBar ref={navRef} aboutRef={aboutRef} projectsRef={projectsRef} contactRef={contactRef} />
-      <About ref={aboutRef} />
-      <Projects ref={projectsRef} />
-      <Contact ref={contactRef} />
+      <div id='nav-bar' ref={navRef}>
+        <NavBar aboutRef={aboutRef} projectsRef={projectsRef} contactRef={contactRef} />
+      </div>
+      <div id='about' ref={aboutRef}>
+        <About />
+      </div>
+      <div id='projects' ref={projectsRef}>
+        <Projects />
+      </div>
+      <div id='contact' ref={contactRef}>
+        <Contact />
+      </div>
       <Footer />
     </div>
   );
