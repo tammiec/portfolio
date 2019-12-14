@@ -10,7 +10,7 @@ export default function IntroText(props) {
     if (text !== intro) {
       setTimeout(() => {
         setText(prev => intro.substring(0, prev.length + 1));
-      }, 80);
+      }, 70);
     }
 
   }, [text])
