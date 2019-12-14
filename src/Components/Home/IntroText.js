@@ -10,10 +10,12 @@ export default function IntroText(props) {
     if (text !== intro) {
       setTimeout(() => {
         setText(prev => intro.substring(0, prev.length + 1));
-      }, 70);
+      }, 65);
+    } else if (text === intro) {
+      props.setTextLoaded(true);
     }
 
-  }, [text])
+  }, [text, props])
 
   return (
     <div className='typewriter'>

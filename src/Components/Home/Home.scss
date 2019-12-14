@@ -9,8 +9,22 @@
   background-color: $Portfolio-3-hex;
 }
 
-.learn-more {
-  width: 200px;
+.about-me-button {
+  opacity: 0;
+  padding: 1em;
+  background-color: $Portfolio-3-hex;
+  outline: none;
+  text-transform: uppercase;
+  border: none;
+  font-size: 0.85em;
+  
+  span {
+    margin-left: 0.6em;
+  }
+}
+
+.about-me-button:hover {
+  cursor: pointer;
 }
 
 #cursor {
@@ -22,6 +36,23 @@
   50% {
     border-color: transparent;
   }
+}
+
+.fade-in {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 1s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
 
 // .typewriter h1 {
