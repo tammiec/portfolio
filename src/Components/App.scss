@@ -2,6 +2,19 @@
   text-align: center;
 }
 
+#nav-bar {
+  position: relative;
+  height: 56px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
 #about {
   display: flex;
   flex-direction: column;

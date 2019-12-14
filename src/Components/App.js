@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 
 import Home from './Home/Home';
 import NavBar from './NavBar';
@@ -17,10 +17,13 @@ export default function App() {
   const projectsRef = useRef(null)
   const contactRef = useRef(null)
 
+  // fix nav-bar to top when scrolled to the bottom of Home
+  const [sticky, setSticky] = useState(false);
+
   return (
     <div className="App">
-      <Home aboutRef={aboutRef} />
-      <div id='nav-bar' ref={navRef}>
+      <Home navRef={navRef} setSticky={setSticky} />
+      <div id='nav-bar' className={sticky ? 'sticky' : ''} ref={navRef}>
         <NavBar aboutRef={aboutRef} projectsRef={projectsRef} contactRef={contactRef} />
       </div>
       <div id='about' ref={aboutRef}>
