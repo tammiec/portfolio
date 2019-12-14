@@ -2,24 +2,25 @@ import React, { useState, useEffect } from 'react';
 
 export default function IntroText(props) {
 
-  const [text, setText] = useState();
+  const [text, setText] = useState('');
 
   const intro = "Hi, my name is Tammie, and I'm a full-stack web developer."
 
-  // useEffect(() => {
-  //   for (let i = 0; i < intro.length; i++) {
-  //     setTimeout(() => {
-  //       setText(prev => prev += intro[i])
-  //     }, 50 * (i + 1));
-  //   }
+  useEffect(() => {
+    if (text !== intro) {
+      setTimeout(() => {
+        setText(prev => intro.substring(0, prev.length + 1));
+      }, 80);
+    }
 
-  //   return () => clearTimeout()
-  
-  // }, [text])
+  }, [text])
 
   return (
     <div className='typewriter'>
-      <h1>{intro}</h1>
+      <h1>
+        <span>{text}</span>
+        <span id="cursor"/>
+      </h1>
     </div>
   );
 }
