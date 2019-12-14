@@ -1,8 +1,18 @@
 #profile-picture {
-  height: 200px;
-  width: 200px;
+  height: 250px;
+  width: 250px;
   border-radius: 50%;
 }
+
+#bio-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 1em 2em 0;
+}
+
 
 .tech-list-item {
   list-style-type: none;

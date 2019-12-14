@@ -1,12 +1,22 @@
 @import './variables';
 
-header {
-  background-color: $Portfolio-2-hex;
+nav {
+  background-color: $Portfolio-4-hex;
   width: 100%;
+  z-index: 10;
 }
 
 #nav-center {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  color: $Portfolio-1-hex;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.85em;
+  
+  p:hover {
+    cursor: pointer;
+    color: $Portfolio-2-hex;
+  }
 }
