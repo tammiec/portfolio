@@ -11,7 +11,7 @@ export default function Component(props) {
   const [fadeIn, setFadeIn] = useState(false);
 
   const handleClick = () => {
-    scrollToRef(props.navRef)
+    scrollToRef(props.aboutRef)
   }
 
   useEffect(() => {

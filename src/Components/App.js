@@ -12,20 +12,27 @@ import './App.scss';
 export default function App() {
 
   // refs for DOM elements to scroll to
-  const navRef = useRef(null)
+  const homeRef = useRef(null)
   const aboutRef = useRef(null)
   const projectsRef = useRef(null)
   const contactRef = useRef(null)
 
   // fix nav-bar to top when scrolled to the bottom of Home
-  const [sticky, setSticky] = useState(false);
+  const [displayNav, setDisplayNav] = useState(false)
 
+  const handleScroll = (event) => {
+    const bottom = homeRef.current.scrollHeight - event.target.scrollTop === event.target.clientHeight;
+    if (bottom) {
+      setDisplayNav(true);
+    }
+  }
+  
   return (
-    <div className="App">
-      <Home navRef={navRef} setSticky={setSticky} />
-      <div id='nav-bar' className={sticky ? 'sticky' : ''} ref={navRef}>
-        <NavBar aboutRef={aboutRef} projectsRef={projectsRef} contactRef={contactRef} />
+    <div className="App" onScroll={handleScroll}>
+      <div id='home' ref={homeRef}>
+        <Home aboutRef={aboutRef} />
       </div>
+      {displayNav && <NavBar aboutRef={aboutRef} projectsRef={projectsRef} contactRef={contactRef} />}
       <div id='about' ref={aboutRef}>
         <About />
       </div>
