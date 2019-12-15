@@ -8,7 +8,7 @@ export default function TechList(props) {
   return (
     <tr>
       <td>
-        <h3>{props.skillTitle}</h3>
+        <h4>{props.skillTitle}</h4>
       </td>
       <td>
         <ul className={`tech-list ${props.skillType}`}>
