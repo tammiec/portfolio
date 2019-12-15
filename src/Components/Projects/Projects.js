@@ -7,7 +7,7 @@ export default function Projects(props) {
   return (
     <>
       <h2>Projects</h2>
-      <p>Additional projects are available to view on my <a href='https://github.com/tammiec'>Github</a> profile.</p>
+      <p>Additional projects are available to view on my <a href='https://github.com/tammiec' rel='noopener noreferrer' target='_blank'>Github</a> profile.</p>
       <ProjectList />
     </>
   );

@@ -18,11 +18,11 @@ export default function Contact(props) {
           </tr>
           <tr>
             <td><img src={linkedin} alt='linked logo'/></td>
-            <td><a href='https://www.linkedin.com/in/tammiechung/'>/in/tammiechung</a></td>
+            <td><a href='https://www.linkedin.com/in/tammiechung/' rel='noopener noreferrer' target='_blank'>/in/tammiechung</a></td>
           </tr>
           <tr>
             <td><img src={github} alt='github logo'/></td>
-            <td><a href='https://github.com/tammiec'>/tammiec</a></td>
+            <td><a href='https://github.com/tammiec' rel='noopener noreferrer' target='_blank'>/tammiec</a></td>
           </tr>
         </tbody>
       </table>

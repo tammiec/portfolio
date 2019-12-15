@@ -1,3 +1,5 @@
+@import '../variables';
+
 .project-image {
   max-width: 100%;
   width: 60em;
@@ -6,4 +8,22 @@
 #project-list {
   padding: 1em 2em 0;
   width: 80%;
+}
+
+#projects {
+  a:link {
+    color: $Portfolio-1-hex;
+  }
+  
+  a:visited {
+    color: $Portfolio-5-hex;
+  }
+  
+  a:hover {
+    color: $Portfolio-5-hex;
+  }
+  
+  a:active {
+    color: $Portfolio-1-hex;
+  }
 }
