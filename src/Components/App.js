@@ -12,7 +12,7 @@ import './App.scss';
 export default function App() {
 
   // refs for DOM elements to scroll to
-  const appRef = useRef(null)
+  const homeRef = useRef(null)
   const navRef = useRef(null)
   const aboutRef = useRef(null)
   const projectsRef = useRef(null)
@@ -35,8 +35,10 @@ export default function App() {
   }, []);
   
   return (
-    <div className="App" ref={appRef}>
-      <Home aboutRef={aboutRef} />
+    <div className="App">
+      <div id='home' ref={homeRef}>
+        <Home aboutRef={aboutRef} />
+      </div>
       <div id='nav-bar' className={sticky ? 'sticky' : ''} ref={navRef}>
         {sticky && <NavBar aboutRef={aboutRef} projectsRef={projectsRef} contactRef={contactRef} />}
       </div>

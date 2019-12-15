@@ -22,9 +22,9 @@ export default function Component(props) {
   }, [textLoaded])
 
   return (
-    <div id='home' >
+    <>
       <IntroText setTextLoaded={setTextLoaded} />
       <button className={`about-me-button ${fadeIn && 'fade-in'}`} onClick={handleClick}>About Me<span>&#8594;</span></button>
-    </div>
+    </>
   );
 }
