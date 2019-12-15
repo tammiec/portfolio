@@ -7,6 +7,8 @@ import Projects from './Projects/Projects';
 import Contact from './Contact/Contact'
 import Footer from './Footer';
 
+import scrollToRef from '../Helpers/scrollToRef';
+
 import './App.scss';
 
 export default function App() {

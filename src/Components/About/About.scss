@@ -48,6 +48,12 @@
   }
 }
 
+@media only screen and (max-width: 500px) {
+  #tech-table td:first-child {
+    width: 25%;
+  }
+}
+
 .tech-list {
   display: flex;
   flex-direction: row;
