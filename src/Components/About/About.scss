@@ -35,16 +35,26 @@
   width: 80%;
 }
 
+#tech-table {
+  text-align: right;
+  width: 100%;
+
+  h3 {
+    margin-right: 0.8em;
+  }
+
+  td:first-child {
+    width: 40%;
+  }
+}
+
 .tech-list {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 
-  h3 {
-    margin-right: 0.4em;
-  }
 }
 
 .tech-list-item {

@@ -6,11 +6,15 @@ export default function TechList(props) {
   const techStack = props.skills.map((stack, index) => <TechListItem key={index} stack={stack} />)
 
   return (
-    <>
-      <ul className={`tech-list ${props.skillType}`}>
-      <h3>{props.skillTitle}</h3>
-        {techStack}
-      </ul>
-    </>
+    <tr>
+      <td>
+        <h3>{props.skillTitle}</h3>
+      </td>
+      <td>
+        <ul className={`tech-list ${props.skillType}`}>
+          {techStack}
+        </ul>
+      </td>
+    </tr>
   );
 }

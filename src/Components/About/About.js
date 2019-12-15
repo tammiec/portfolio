@@ -17,26 +17,30 @@ export default function About(props) {
       </div>
       <div id='tech-list-container'>
         <h2>Technical Skills</h2>
-        <TechList 
-          skillType='languages'
-          skillTitle='Languages'
-          skills={['HTML', 'CSS', 'JavaScript', 'Ruby', 'SQL']}
-        />
-        <TechList 
-          skillType='frameworks'
-          skillTitle='Frameworks, Libraries &amp; Environments'
-          skills={['NodeJS', 'Express', 'EJS', 'jQuery', 'Ajax', 'React', 'Rails', 'Sass', 'Bootstrap', 'Material UI', 'ActiveRecord', 'WebSockets']}
-        />
-        <TechList 
-          skillType='databases'
-          skillTitle='Databases, Systems &amp; CMS'
-          skills={['PostgreSQL', 'Git', 'CircleCI']}
-        />
-        <TechList 
-          skillType='learning'
-          skillTitle='Currently Learning'
-          skills={['Redux', 'React Native']}
-        />
+        <table id='tech-table'>
+          <tbody>
+            <TechList 
+              skillType='languages'
+              skillTitle='Languages'
+              skills={['HTML', 'CSS', 'JavaScript', 'Ruby', 'SQL']}
+            />
+            <TechList 
+              skillType='frameworks'
+              skillTitle='Frameworks, Libraries &amp; Environments'
+              skills={['NodeJS', 'Express', 'EJS', 'jQuery', 'Ajax', 'React', 'Rails', 'Sass', 'Bootstrap', 'Material UI', 'ActiveRecord', 'WebSockets']}
+            />
+            <TechList 
+              skillType='databases'
+              skillTitle='Databases, Systems &amp; CMS'
+              skills={['PostgreSQL', 'Git', 'CircleCI']}
+            />
+            <TechList 
+              skillType='learning'
+              skillTitle='Currently Learning'
+              skills={['Redux', 'React Native']}
+            />
+          </tbody>
+        </table>
       </div>
     </>
   );
