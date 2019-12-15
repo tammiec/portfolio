@@ -36,7 +36,7 @@ export default function ProjectList(props) {
   ))
 
   return (
-    <ul>
+    <ul id='project-list'>
       {projectsList}
     </ul>
   );
