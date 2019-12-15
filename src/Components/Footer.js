@@ -1,9 +1,11 @@
 import React from 'react';
 
+import './Footer.scss';
+
 export default function Footer(props) {
   return (
     <footer>
-      <p>Tammie Chung &#169; 2019</p>
+      Tammie Chung &#169; 2019
     </footer>
   );
 }

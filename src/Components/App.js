@@ -4,7 +4,7 @@ import Home from './Home/Home';
 import NavBar from './NavBar';
 import About from './About/About';
 import Projects from './Projects/Projects';
-import Contact from './Contact';
+import Contact from './Contact/Contact'
 import Footer from './Footer';
 
 import './App.scss';
@@ -12,6 +12,7 @@ import './App.scss';
 export default function App() {
 
   // refs for DOM elements to scroll to
+  const appRef = useRef(null)
   const navRef = useRef(null)
   const aboutRef = useRef(null)
   const projectsRef = useRef(null)
@@ -34,7 +35,7 @@ export default function App() {
   }, []);
   
   return (
-    <div className="App">
+    <div className="App" ref={appRef}>
       <Home aboutRef={aboutRef} />
       <div id='nav-bar' className={sticky ? 'sticky' : ''} ref={navRef}>
         {sticky && <NavBar aboutRef={aboutRef} projectsRef={projectsRef} contactRef={contactRef} />}
