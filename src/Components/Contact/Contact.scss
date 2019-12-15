@@ -1,0 +1,34 @@
+@import '../variables';
+
+#contact-table {
+  text-align: left;
+
+  td {
+    padding: 0.5em;
+  }
+
+  img {
+    height: 20px;
+    width: 20px;
+  }
+
+  a:link {
+    color: $Portfolio-1-hex;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: $Portfolio-1-hex;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: $Portfolio-4-hex;
+  }
+  
+  /* selected link */
+  a:active {
+    color: $Portfolio-1-hex;
+  }
+
+}

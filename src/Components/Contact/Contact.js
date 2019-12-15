@@ -10,7 +10,7 @@ export default function Contact(props) {
   return (
     <>
       <h2>Contact Me</h2>
-      <table>
+      <table id='contact-table'>
         <tr>
           <td><img src={email} alt='email logo'/></td>
           <td><a href='mailto:tammie.chung11@gmail.com'>tammie.chung11@gmail.com</a></td>
