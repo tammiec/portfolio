@@ -27,3 +27,10 @@
     color: $Portfolio-1-hex;
   }
 }
+
+.project-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
