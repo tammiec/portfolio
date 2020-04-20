@@ -22,11 +22,6 @@ nav {
   text-transform: uppercase;
   font-weight: 600;
   font-size: 0.85em;
-  
-  p:hover {
-    cursor: pointer;
-    color: $Portfolio-2-hex;
-  }
 }
 
 .nav-item {
@@ -35,4 +30,10 @@ nav {
   background-color: $Portfolio-4-hex;
   text-transform: uppercase;
   font-size: 0.9em;
+  outline-color: $Portfolio-2-hex;
+}
+
+.nav-item:hover {
+  cursor: pointer;
+  color: $Portfolio-2-hex;
 }

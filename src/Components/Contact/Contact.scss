@@ -12,6 +12,10 @@
     width: 20px;
   }
 
+  a {
+    outline-color: $Portfolio-5-hex;
+  }
+
   a:link {
     color: $Portfolio-1-hex;
   }
