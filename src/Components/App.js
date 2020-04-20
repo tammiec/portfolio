@@ -21,6 +21,9 @@ export default function App() {
 
   // fix nav-bar to top when scrolled to the bottom of Home
   const [sticky, setSticky] = useState(false)
+
+  // set mode to display content
+  const [mode, setMode] = useState('ABOUT');
    
   useEffect(() => {
     const scrollCallBack = window.addEventListener("scroll", () => {
@@ -41,11 +44,13 @@ export default function App() {
         <Home contentRef={contentRef} />
       </div>
       <div id='nav-bar' className={sticky ? 'sticky' : ''} ref={navRef}>
-        {sticky && <NavBar aboutRef={aboutRef} projectsRef={projectsRef} contactRef={contactRef} />}
+        {sticky && <NavBar setMode={setMode} contactRef={contactRef} contentRef={contentRef} />}
       </div>
       <div id='content-container' ref={contentRef}>
-        <About />
-        <Projects />
+        {mode === 'ABOUT' && <About />}
+        {mode === 'PROJECTS' && <Projects />}
+      </div>
+      <div id='contact' ref={contactRef}>
         <Contact />
       </div>
       <Footer />

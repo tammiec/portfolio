@@ -28,3 +28,11 @@ nav {
     color: $Portfolio-2-hex;
   }
 }
+
+.nav-item {
+  height: 56px;
+  border: none;
+  background-color: $Portfolio-4-hex;
+  text-transform: uppercase;
+  font-size: 0.9em;
+}
