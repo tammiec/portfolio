@@ -7,7 +7,6 @@ import './NavBar.scss';
 export default function NavBar(props) {
 
   const handleClick = e => {
-    console.log('e:', e)
     props.setMode(e.target.name);
     scrollToRef(props.contentRef);
   }
