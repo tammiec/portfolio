@@ -10,7 +10,7 @@ export default function Component(props) {
   const [textLoaded, setTextLoaded] = useState(false);
 
   const handleClick = () => {
-    scrollToRef(props.aboutRef)
+    scrollToRef(props.contentRef)
   }
 
   return (
