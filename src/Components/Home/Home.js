@@ -16,7 +16,7 @@ export default function Component(props) {
   return (
     <>
       <IntroText setTextLoaded={setTextLoaded} />
-      <button className={`about-me-button ${textLoaded && 'fade-in'} ${textLoaded && 'button-hover'}`} onClick={handleClick}>About Me<span>&#8594;</span></button>
+      <button className={`about-me-button ${textLoaded && 'fade-in'} ${textLoaded && 'button-hover'}`} onClick={handleClick}>About Me<span>&#8595;</span></button>
     </>
   );
 }

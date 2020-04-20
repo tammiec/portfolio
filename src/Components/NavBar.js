@@ -9,6 +9,7 @@ export default function NavBar(props) {
   const handleClick = item => {
     scrollToRef(item)
   }
+
   return (
     <nav id='nav-center'>
       <p className='nav-item' onClick={() => handleClick(props.aboutRef)}>About Me</p>
