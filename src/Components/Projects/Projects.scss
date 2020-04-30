@@ -5,6 +5,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 
   a {
     outline-color: $Portfolio-2-hex;
@@ -35,6 +36,12 @@
 #project-list {
   padding: 1em 2em 0;
   width: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+
 }
 
 .project-item {
@@ -42,4 +49,19 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  box-shadow: $default-shadow;
+  width: 300px;
+  height: 500px;
+  padding: 1em;
+
+  transition: all 100ms ease-in-out; 
+
+  &:not(:last-child) {
+    margin-right: 2em;
+  }
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+  }
 }
