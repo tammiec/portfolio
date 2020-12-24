@@ -1,6 +1,5 @@
 import React from 'react';
 
-import email from './at.png';
 import github from './github.png';
 import linkedin from './linkedin.png';
 
