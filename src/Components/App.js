@@ -14,8 +14,6 @@ export default function App() {
   // refs for DOM elements to scroll to
   const homeRef = useRef(null);
   const navRef = useRef(null);
-  const aboutRef = useRef(null);
-  const projectsRef = useRef(null);
   const contactRef = useRef(null);
   const contentRef = useRef(null);
 
