@@ -13,10 +13,6 @@ export default function Contact(props) {
       <table id='contact-table'>
         <tbody>
           <tr>
-            <td><img src={email} alt='email logo'/></td>
-            <td><a href='mailto:tammie.chung11@gmail.com'>tammie.chung11@gmail.com</a></td>
-          </tr>
-          <tr>
             <td><img src={linkedin} alt='linked logo'/></td>
             <td><a href='https://www.linkedin.com/in/tammiechung/' rel='noopener noreferrer' target='_blank'>/in/tammiechung</a></td>
           </tr>
