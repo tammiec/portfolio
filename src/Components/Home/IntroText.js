@@ -4,7 +4,7 @@ export default function IntroText(props) {
 
   const [text, setText] = useState('');
 
-  const intro = "Hi, my name is Tammie, and I'm a full-stack web developer."
+  const intro = "Hi, my name is Tammie, and I'm a full-stack software developer."
 
   useEffect(() => {
     if (text !== intro) {

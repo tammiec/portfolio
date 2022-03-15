@@ -1,12 +1,18 @@
 import drawingBoard from './project-drawingboard.png';
 import toodleedoo from './project-toodleedoo.png';
 import tweeter from './project-tweeter.png';
+import catdash from './project-catdash.gif';
 
 export const projects = [
   {
     name: 'the Drawing Board',
     description: "A collaborative meeting app that allows users to schedule and host meetings remotely, whiteboard over documents in real-time, and take personal notes. Audio streaming and text chats are enabled in the meeting room for communication, and when the meeting ends, marked up documents and notes are saved to users' dashboards for future reference.",
     image: drawingBoard
+  },
+  {
+    name: 'Cat-Dash',
+    description: 'A simple Chrome extension that shows the user a randomly generated photo of a cat whenever a new tab is opened. The dashboard is customizable with different colours, as well as a personalized greeting.',
+    image: catdash
   },
   {
     name: 'Toodleedoo',
@@ -17,5 +23,5 @@ export const projects = [
     name: 'Tweeter',
     description: 'A single-page Twitter clone project powered by Ajax.',
     image: tweeter
-  }
+  },
 ]
