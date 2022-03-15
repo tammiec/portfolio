@@ -5,7 +5,6 @@ import NavBar from './NavBar';
 import About from './About/About';
 import Projects from './Projects/Projects';
 import Contact from './Contact/Contact'
-import Footer from './Footer';
 
 import './App.scss';
 
@@ -51,7 +50,6 @@ export default function App() {
       <div id='contact' ref={contactRef}>
         <Contact />
       </div>
-      <Footer />
     </div>
   );
 }
