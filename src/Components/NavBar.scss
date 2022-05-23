@@ -1,7 +1,7 @@
 @import './variables';
 
 nav {
-  background-color: $Portfolio-4-hex;
+  background-color: $Portfolio-5-hex;
   position: fixed;
   top: 0;
   left: 0;
@@ -27,13 +27,13 @@ nav {
 .nav-item {
   height: 56px;
   border: none;
-  background-color: $Portfolio-4-hex;
+  background-color: $Portfolio-5-hex;
   text-transform: uppercase;
   font-size: 0.9em;
-  outline-color: $Portfolio-2-hex;
+  outline-color: $Portfolio-4-hex;
 }
 
 .nav-item:hover {
   cursor: pointer;
-  color: $Portfolio-2-hex;
+  color: $Portfolio-4-hex;
 }

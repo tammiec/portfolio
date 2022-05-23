@@ -7,6 +7,7 @@
   align-items: center;
   justify-content: center;
   background-color: $Portfolio-3-hex;
+  color: $Portfolio-4-hex;
 }
 
 .about-me-button {
@@ -17,6 +18,7 @@
   text-transform: uppercase;
   border: none;
   font-size: 0.85em;
+  color: $Portfolio-2-hex;
   
   span {
     margin-left: 0.6em;
@@ -28,7 +30,7 @@
 }
 
 #cursor {
-  border-left: .1em solid $Portfolio-5-hex;;
+  border-left: .1em solid $Portfolio-5-hex;
   animation: blink .7s steps(1) infinite;
 }
 

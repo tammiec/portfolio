@@ -1,6 +1,6 @@
 import React from 'react';
 
-import profilePicture from './bio-image.png';
+import profilePicture from './bio-image.jpg';
 import TechList from './TechList';
 
 import './About.scss';
@@ -12,7 +12,7 @@ export default function About(props) {
         <h2>About Me</h2>
         <div id='bio-info'>
           <img id='profile-picture' src={profilePicture} alt='Tammie Chung' />
-          <p>I'm a software developer based in Toronto with a background in law, event management, and customer service. I'm passionate about learning new skills, and love exercising my creativity, which is what led me to leave my job in event management in 2019 to pursue a career in software development. When I'm not busy coding, you can find me trying out the best cheap eats in the city, playing piano and violin, or just curled up on the couch with my cat and a good book.</p>
+          <p>I'm a software developer based in Toronto with a background in law, event management, and customer service. I'm passionate about learning new skills, problem-solving, and love exercising my creativity, which is what led me to leave my job in event management in 2019 to pursue a career in software development. I started out by learning the basics during a 12-week bootcamp, and since then have continued to expand my knowledge and learn on the job from some amazing peers and mentors. When I'm not busy coding, you can find me trying out the best cheap eats in the city, playing piano and violin, or just curled up on the couch with my cat and a good book.</p>
         </div>
       </div>
       <div id='tech-list-container'>

@@ -24,7 +24,7 @@ export default function App() {
    
   useEffect(() => {
     const scrollCallBack = window.addEventListener("scroll", () => {
-      if (window.pageYOffset > navRef.current.offsetTop) {
+      if (window.pageYOffset >= navRef.current.offsetTop || (window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
         setSticky(true)
       } else {
         setSticky(false)
